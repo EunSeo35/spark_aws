@@ -1,0 +1,3 @@
+# 대용량 CSV 파일 제외
+/src/data/trips/yellow_tripdata_2021-*.csv
+
