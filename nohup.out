@@ -12893,3 +12893,511 @@ To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLeve
 [I 2024-12-13 17:03:50.885 ServerApp] Connecting to kernel f560993f-6818-4f89-9d96-34e84c069d03.
 [I 2024-12-13 17:03:50.986 ServerApp] Connecting to kernel e91e8c2d-8f85-4ed7-b9c7-17e2ca6eb710.
 [W 2024-12-13 17:04:06.170 ServerApp] delete /src/data/ratings.csv
+[W 2024-12-13 17:05:05.922 ServerApp] 404 GET /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb?content=0&_=1733377963968 (b3edc88a2a9149dc93a8ede157742df9@118.219.28.24) 1.81ms referer=http://15.152.89.63:8909/notebooks/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb
+[W 2024-12-13 17:05:05.922 ServerApp] 404 GET /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb?content=0&_=1733377963968 (118.219.28.24): No such file or directory: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb
+[I 2024-12-13 17:05:05.987 ServerApp] Uploading file to /spark_aws/241205_04_RDD_나이별친구수카운트.ipynb
+[E 2024-12-13 17:05:05.999 ServerApp] Error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/filemanager.py", line 963, in save
+        await self._save_notebook(os_path, nb, capture_validation_error=validation_error)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 488, in _save_notebook
+        with self.atomic_writing(os_path, encoding="utf-8") as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 220, in atomic_writing
+        with atomic_writing(os_path, *args, **kwargs) as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 112, in atomic_writing
+        fileobj = open(path, "w", encoding=encoding, **kwargs)  # noqa: SIM115
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+[W 2024-12-13 17:05:05.999 ServerApp] 500 PUT /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb (118.219.28.24): Unexpected error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+[W 2024-12-13 17:05:05.999 ServerApp] wrote error: "Unexpected error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'"
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/filemanager.py", line 963, in save
+        await self._save_notebook(os_path, nb, capture_validation_error=validation_error)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 488, in _save_notebook
+        with self.atomic_writing(os_path, encoding="utf-8") as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 220, in atomic_writing
+        with atomic_writing(os_path, *args, **kwargs) as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 112, in atomic_writing
+        fileobj = open(path, "w", encoding=encoding, **kwargs)  # noqa: SIM115
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+    
+    The above exception was the direct cause of the following exception:
+    
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/handlers.py", line 321, in put
+        await self._upload(model, path)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/handlers.py", line 224, in _upload
+        model = await ensure_async(self.contents_manager.new(model, path))
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_core/utils/__init__.py", line 198, in ensure_async
+        result = await obj
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/manager.py", line 1019, in new
+        model = await self.save(model, path)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/largefilemanager.py", line 133, in save
+        return await super().save(model, path)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/filemanager.py", line 978, in save
+        raise web.HTTPError(500, f"Unexpected error while saving file: {path} {e}") from e
+    tornado.web.HTTPError: HTTP 500: Internal Server Error (Unexpected error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb')
+[E 2024-12-13 17:05:06.000 ServerApp] {
+      "Host": "15.152.89.63:8909",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://15.152.89.63:8909/notebooks/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    }
+[E 2024-12-13 17:05:06.000 ServerApp] 500 PUT /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb (b3edc88a2a9149dc93a8ede157742df9@118.219.28.24) 19.40ms referer=http://15.152.89.63:8909/notebooks/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb
+[W 2024-12-13 17:07:05.907 ServerApp] 404 GET /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb?content=0&_=1733377963969 (b3edc88a2a9149dc93a8ede157742df9@118.219.28.24) 1.31ms referer=http://15.152.89.63:8909/notebooks/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb
+[W 2024-12-13 17:07:05.907 ServerApp] 404 GET /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb?content=0&_=1733377963969 (118.219.28.24): No such file or directory: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb
+[I 2024-12-13 17:07:05.962 ServerApp] Uploading file to /spark_aws/241205_04_RDD_나이별친구수카운트.ipynb
+[E 2024-12-13 17:07:05.973 ServerApp] Error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/filemanager.py", line 963, in save
+        await self._save_notebook(os_path, nb, capture_validation_error=validation_error)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 488, in _save_notebook
+        with self.atomic_writing(os_path, encoding="utf-8") as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 220, in atomic_writing
+        with atomic_writing(os_path, *args, **kwargs) as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 112, in atomic_writing
+        fileobj = open(path, "w", encoding=encoding, **kwargs)  # noqa: SIM115
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+[W 2024-12-13 17:07:05.974 ServerApp] 500 PUT /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb (118.219.28.24): Unexpected error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+[W 2024-12-13 17:07:05.974 ServerApp] wrote error: "Unexpected error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'"
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/filemanager.py", line 963, in save
+        await self._save_notebook(os_path, nb, capture_validation_error=validation_error)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 488, in _save_notebook
+        with self.atomic_writing(os_path, encoding="utf-8") as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 220, in atomic_writing
+        with atomic_writing(os_path, *args, **kwargs) as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 112, in atomic_writing
+        fileobj = open(path, "w", encoding=encoding, **kwargs)  # noqa: SIM115
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+    
+    The above exception was the direct cause of the following exception:
+    
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/handlers.py", line 321, in put
+        await self._upload(model, path)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/handlers.py", line 224, in _upload
+        model = await ensure_async(self.contents_manager.new(model, path))
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_core/utils/__init__.py", line 198, in ensure_async
+        result = await obj
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/manager.py", line 1019, in new
+        model = await self.save(model, path)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/largefilemanager.py", line 133, in save
+        return await super().save(model, path)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/filemanager.py", line 978, in save
+        raise web.HTTPError(500, f"Unexpected error while saving file: {path} {e}") from e
+    tornado.web.HTTPError: HTTP 500: Internal Server Error (Unexpected error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb')
+[E 2024-12-13 17:07:05.974 ServerApp] {
+      "Host": "15.152.89.63:8909",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://15.152.89.63:8909/notebooks/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    }
+[E 2024-12-13 17:07:05.974 ServerApp] 500 PUT /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb (b3edc88a2a9149dc93a8ede157742df9@118.219.28.24) 18.79ms referer=http://15.152.89.63:8909/notebooks/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb
+[W 2024-12-13 17:09:05.919 ServerApp] 404 GET /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb?content=0&_=1733377963970 (b3edc88a2a9149dc93a8ede157742df9@118.219.28.24) 0.92ms referer=http://15.152.89.63:8909/notebooks/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb
+[W 2024-12-13 17:09:05.919 ServerApp] 404 GET /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb?content=0&_=1733377963970 (118.219.28.24): No such file or directory: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb
+[I 2024-12-13 17:09:05.979 ServerApp] Uploading file to /spark_aws/241205_04_RDD_나이별친구수카운트.ipynb
+[E 2024-12-13 17:09:05.990 ServerApp] Error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/filemanager.py", line 963, in save
+        await self._save_notebook(os_path, nb, capture_validation_error=validation_error)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 488, in _save_notebook
+        with self.atomic_writing(os_path, encoding="utf-8") as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 220, in atomic_writing
+        with atomic_writing(os_path, *args, **kwargs) as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 112, in atomic_writing
+        fileobj = open(path, "w", encoding=encoding, **kwargs)  # noqa: SIM115
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+[W 2024-12-13 17:09:05.991 ServerApp] 500 PUT /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb (118.219.28.24): Unexpected error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+[W 2024-12-13 17:09:05.991 ServerApp] wrote error: "Unexpected error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'"
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/filemanager.py", line 963, in save
+        await self._save_notebook(os_path, nb, capture_validation_error=validation_error)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 488, in _save_notebook
+        with self.atomic_writing(os_path, encoding="utf-8") as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 220, in atomic_writing
+        with atomic_writing(os_path, *args, **kwargs) as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 112, in atomic_writing
+        fileobj = open(path, "w", encoding=encoding, **kwargs)  # noqa: SIM115
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+    
+    The above exception was the direct cause of the following exception:
+    
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/handlers.py", line 321, in put
+        await self._upload(model, path)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/handlers.py", line 224, in _upload
+        model = await ensure_async(self.contents_manager.new(model, path))
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_core/utils/__init__.py", line 198, in ensure_async
+        result = await obj
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/manager.py", line 1019, in new
+        model = await self.save(model, path)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/largefilemanager.py", line 133, in save
+        return await super().save(model, path)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/filemanager.py", line 978, in save
+        raise web.HTTPError(500, f"Unexpected error while saving file: {path} {e}") from e
+    tornado.web.HTTPError: HTTP 500: Internal Server Error (Unexpected error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb')
+[E 2024-12-13 17:09:05.991 ServerApp] {
+      "Host": "15.152.89.63:8909",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://15.152.89.63:8909/notebooks/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    }
+[E 2024-12-13 17:09:05.991 ServerApp] 500 PUT /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb (b3edc88a2a9149dc93a8ede157742df9@118.219.28.24) 17.09ms referer=http://15.152.89.63:8909/notebooks/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb
+[W 2024-12-13 17:11:05.900 ServerApp] 404 GET /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb?content=0&_=1733377963971 (b3edc88a2a9149dc93a8ede157742df9@118.219.28.24) 1.34ms referer=http://15.152.89.63:8909/notebooks/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb
+[W 2024-12-13 17:11:05.901 ServerApp] 404 GET /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb?content=0&_=1733377963971 (118.219.28.24): No such file or directory: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb
+[I 2024-12-13 17:11:05.969 ServerApp] Uploading file to /spark_aws/241205_04_RDD_나이별친구수카운트.ipynb
+[E 2024-12-13 17:11:05.982 ServerApp] Error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/filemanager.py", line 963, in save
+        await self._save_notebook(os_path, nb, capture_validation_error=validation_error)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 488, in _save_notebook
+        with self.atomic_writing(os_path, encoding="utf-8") as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 220, in atomic_writing
+        with atomic_writing(os_path, *args, **kwargs) as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 112, in atomic_writing
+        fileobj = open(path, "w", encoding=encoding, **kwargs)  # noqa: SIM115
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+[W 2024-12-13 17:11:05.982 ServerApp] 500 PUT /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb (118.219.28.24): Unexpected error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+[W 2024-12-13 17:11:05.982 ServerApp] wrote error: "Unexpected error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'"
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/filemanager.py", line 963, in save
+        await self._save_notebook(os_path, nb, capture_validation_error=validation_error)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 488, in _save_notebook
+        with self.atomic_writing(os_path, encoding="utf-8") as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 220, in atomic_writing
+        with atomic_writing(os_path, *args, **kwargs) as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 112, in atomic_writing
+        fileobj = open(path, "w", encoding=encoding, **kwargs)  # noqa: SIM115
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+    
+    The above exception was the direct cause of the following exception:
+    
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/handlers.py", line 321, in put
+        await self._upload(model, path)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/handlers.py", line 224, in _upload
+        model = await ensure_async(self.contents_manager.new(model, path))
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_core/utils/__init__.py", line 198, in ensure_async
+        result = await obj
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/manager.py", line 1019, in new
+        model = await self.save(model, path)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/largefilemanager.py", line 133, in save
+        return await super().save(model, path)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/filemanager.py", line 978, in save
+        raise web.HTTPError(500, f"Unexpected error while saving file: {path} {e}") from e
+    tornado.web.HTTPError: HTTP 500: Internal Server Error (Unexpected error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb')
+[E 2024-12-13 17:11:05.983 ServerApp] {
+      "Host": "15.152.89.63:8909",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://15.152.89.63:8909/notebooks/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    }
+[E 2024-12-13 17:11:05.983 ServerApp] 500 PUT /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb (b3edc88a2a9149dc93a8ede157742df9@118.219.28.24) 25.61ms referer=http://15.152.89.63:8909/notebooks/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb
+[W 2024-12-13 17:13:05.919 ServerApp] 404 GET /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb?content=0&_=1733377963972 (b3edc88a2a9149dc93a8ede157742df9@118.219.28.24) 1.29ms referer=http://15.152.89.63:8909/notebooks/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb
+[W 2024-12-13 17:13:05.920 ServerApp] 404 GET /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb?content=0&_=1733377963972 (118.219.28.24): No such file or directory: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb
+[I 2024-12-13 17:13:05.977 ServerApp] Uploading file to /spark_aws/241205_04_RDD_나이별친구수카운트.ipynb
+[E 2024-12-13 17:13:05.989 ServerApp] Error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/filemanager.py", line 963, in save
+        await self._save_notebook(os_path, nb, capture_validation_error=validation_error)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 488, in _save_notebook
+        with self.atomic_writing(os_path, encoding="utf-8") as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 220, in atomic_writing
+        with atomic_writing(os_path, *args, **kwargs) as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 112, in atomic_writing
+        fileobj = open(path, "w", encoding=encoding, **kwargs)  # noqa: SIM115
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+[W 2024-12-13 17:13:05.989 ServerApp] 500 PUT /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb (118.219.28.24): Unexpected error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+[W 2024-12-13 17:13:05.989 ServerApp] wrote error: "Unexpected error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'"
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/filemanager.py", line 963, in save
+        await self._save_notebook(os_path, nb, capture_validation_error=validation_error)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 488, in _save_notebook
+        with self.atomic_writing(os_path, encoding="utf-8") as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 220, in atomic_writing
+        with atomic_writing(os_path, *args, **kwargs) as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 112, in atomic_writing
+        fileobj = open(path, "w", encoding=encoding, **kwargs)  # noqa: SIM115
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+    
+    The above exception was the direct cause of the following exception:
+    
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/handlers.py", line 321, in put
+        await self._upload(model, path)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/handlers.py", line 224, in _upload
+        model = await ensure_async(self.contents_manager.new(model, path))
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_core/utils/__init__.py", line 198, in ensure_async
+        result = await obj
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/manager.py", line 1019, in new
+        model = await self.save(model, path)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/largefilemanager.py", line 133, in save
+        return await super().save(model, path)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/filemanager.py", line 978, in save
+        raise web.HTTPError(500, f"Unexpected error while saving file: {path} {e}") from e
+    tornado.web.HTTPError: HTTP 500: Internal Server Error (Unexpected error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb')
+[E 2024-12-13 17:13:05.989 ServerApp] {
+      "Host": "15.152.89.63:8909",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://15.152.89.63:8909/notebooks/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    }
+[E 2024-12-13 17:13:05.990 ServerApp] 500 PUT /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb (b3edc88a2a9149dc93a8ede157742df9@118.219.28.24) 15.55ms referer=http://15.152.89.63:8909/notebooks/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb
+[W 2024-12-13 17:15:39.904 ServerApp] 404 GET /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb?content=0&_=1733377963973 (b3edc88a2a9149dc93a8ede157742df9@118.219.28.24) 1.26ms referer=http://15.152.89.63:8909/notebooks/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb
+[W 2024-12-13 17:15:39.905 ServerApp] 404 GET /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb?content=0&_=1733377963973 (118.219.28.24): No such file or directory: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb
+[I 2024-12-13 17:15:39.965 ServerApp] Uploading file to /spark_aws/241205_04_RDD_나이별친구수카운트.ipynb
+[E 2024-12-13 17:15:39.977 ServerApp] Error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/filemanager.py", line 963, in save
+        await self._save_notebook(os_path, nb, capture_validation_error=validation_error)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 488, in _save_notebook
+        with self.atomic_writing(os_path, encoding="utf-8") as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 220, in atomic_writing
+        with atomic_writing(os_path, *args, **kwargs) as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 112, in atomic_writing
+        fileobj = open(path, "w", encoding=encoding, **kwargs)  # noqa: SIM115
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+[W 2024-12-13 17:15:39.977 ServerApp] 500 PUT /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb (118.219.28.24): Unexpected error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+[W 2024-12-13 17:15:39.977 ServerApp] wrote error: "Unexpected error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'"
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/filemanager.py", line 963, in save
+        await self._save_notebook(os_path, nb, capture_validation_error=validation_error)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 488, in _save_notebook
+        with self.atomic_writing(os_path, encoding="utf-8") as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 220, in atomic_writing
+        with atomic_writing(os_path, *args, **kwargs) as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 112, in atomic_writing
+        fileobj = open(path, "w", encoding=encoding, **kwargs)  # noqa: SIM115
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+    
+    The above exception was the direct cause of the following exception:
+    
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/handlers.py", line 321, in put
+        await self._upload(model, path)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/handlers.py", line 224, in _upload
+        model = await ensure_async(self.contents_manager.new(model, path))
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_core/utils/__init__.py", line 198, in ensure_async
+        result = await obj
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/manager.py", line 1019, in new
+        model = await self.save(model, path)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/largefilemanager.py", line 133, in save
+        return await super().save(model, path)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/filemanager.py", line 978, in save
+        raise web.HTTPError(500, f"Unexpected error while saving file: {path} {e}") from e
+    tornado.web.HTTPError: HTTP 500: Internal Server Error (Unexpected error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb')
+[E 2024-12-13 17:15:39.978 ServerApp] {
+      "Host": "15.152.89.63:8909",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://15.152.89.63:8909/notebooks/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    }
+[E 2024-12-13 17:15:39.978 ServerApp] 500 PUT /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb (b3edc88a2a9149dc93a8ede157742df9@118.219.28.24) 16.49ms referer=http://15.152.89.63:8909/notebooks/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb
+[W 2024-12-13 17:17:05.897 ServerApp] 404 GET /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb?content=0&_=1733377963974 (b3edc88a2a9149dc93a8ede157742df9@118.219.28.24) 1.24ms referer=http://15.152.89.63:8909/notebooks/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb
+[W 2024-12-13 17:17:05.897 ServerApp] 404 GET /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb?content=0&_=1733377963974 (118.219.28.24): No such file or directory: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb
+[I 2024-12-13 17:17:05.960 ServerApp] Uploading file to /spark_aws/241205_04_RDD_나이별친구수카운트.ipynb
+[E 2024-12-13 17:17:05.972 ServerApp] Error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/filemanager.py", line 963, in save
+        await self._save_notebook(os_path, nb, capture_validation_error=validation_error)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 488, in _save_notebook
+        with self.atomic_writing(os_path, encoding="utf-8") as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 220, in atomic_writing
+        with atomic_writing(os_path, *args, **kwargs) as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 112, in atomic_writing
+        fileobj = open(path, "w", encoding=encoding, **kwargs)  # noqa: SIM115
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+[W 2024-12-13 17:17:05.973 ServerApp] 500 PUT /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb (118.219.28.24): Unexpected error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+[W 2024-12-13 17:17:05.973 ServerApp] wrote error: "Unexpected error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'"
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/filemanager.py", line 963, in save
+        await self._save_notebook(os_path, nb, capture_validation_error=validation_error)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 488, in _save_notebook
+        with self.atomic_writing(os_path, encoding="utf-8") as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 220, in atomic_writing
+        with atomic_writing(os_path, *args, **kwargs) as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 112, in atomic_writing
+        fileobj = open(path, "w", encoding=encoding, **kwargs)  # noqa: SIM115
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+    
+    The above exception was the direct cause of the following exception:
+    
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/handlers.py", line 321, in put
+        await self._upload(model, path)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/handlers.py", line 224, in _upload
+        model = await ensure_async(self.contents_manager.new(model, path))
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_core/utils/__init__.py", line 198, in ensure_async
+        result = await obj
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/manager.py", line 1019, in new
+        model = await self.save(model, path)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/largefilemanager.py", line 133, in save
+        return await super().save(model, path)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/filemanager.py", line 978, in save
+        raise web.HTTPError(500, f"Unexpected error while saving file: {path} {e}") from e
+    tornado.web.HTTPError: HTTP 500: Internal Server Error (Unexpected error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb')
+[E 2024-12-13 17:17:05.973 ServerApp] {
+      "Host": "15.152.89.63:8909",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://15.152.89.63:8909/notebooks/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    }
+[E 2024-12-13 17:17:05.973 ServerApp] 500 PUT /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb (b3edc88a2a9149dc93a8ede157742df9@118.219.28.24) 27.57ms referer=http://15.152.89.63:8909/notebooks/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb
+[W 2024-12-13 17:18:15.577 ServerApp] 404 GET /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb?content=0&_=1733377963975 (b3edc88a2a9149dc93a8ede157742df9@118.219.28.24) 1.24ms referer=http://15.152.89.63:8909/notebooks/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb
+[W 2024-12-13 17:18:15.578 ServerApp] 404 GET /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb?content=0&_=1733377963975 (118.219.28.24): No such file or directory: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb
+[I 2024-12-13 17:18:15.617 ServerApp] Uploading file to /spark_aws/241205_04_RDD_나이별친구수카운트.ipynb
+[E 2024-12-13 17:18:15.628 ServerApp] Error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/filemanager.py", line 963, in save
+        await self._save_notebook(os_path, nb, capture_validation_error=validation_error)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 488, in _save_notebook
+        with self.atomic_writing(os_path, encoding="utf-8") as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 220, in atomic_writing
+        with atomic_writing(os_path, *args, **kwargs) as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 112, in atomic_writing
+        fileobj = open(path, "w", encoding=encoding, **kwargs)  # noqa: SIM115
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+[W 2024-12-13 17:18:15.628 ServerApp] 500 PUT /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb (118.219.28.24): Unexpected error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+[W 2024-12-13 17:18:15.628 ServerApp] wrote error: "Unexpected error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'"
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/filemanager.py", line 963, in save
+        await self._save_notebook(os_path, nb, capture_validation_error=validation_error)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 488, in _save_notebook
+        with self.atomic_writing(os_path, encoding="utf-8") as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 220, in atomic_writing
+        with atomic_writing(os_path, *args, **kwargs) as f:
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/contextlib.py", line 113, in __enter__
+        return next(self.gen)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/fileio.py", line 112, in atomic_writing
+        fileobj = open(path, "w", encoding=encoding, **kwargs)  # noqa: SIM115
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb'
+    
+    The above exception was the direct cause of the following exception:
+    
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/handlers.py", line 321, in put
+        await self._upload(model, path)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/handlers.py", line 224, in _upload
+        model = await ensure_async(self.contents_manager.new(model, path))
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_core/utils/__init__.py", line 198, in ensure_async
+        result = await obj
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/manager.py", line 1019, in new
+        model = await self.save(model, path)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/largefilemanager.py", line 133, in save
+        return await super().save(model, path)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/contents/filemanager.py", line 978, in save
+        raise web.HTTPError(500, f"Unexpected error while saving file: {path} {e}") from e
+    tornado.web.HTTPError: HTTP 500: Internal Server Error (Unexpected error while saving file: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb [Errno 2] No such file or directory: '/home/lab09/git/spark_aws/241205_04_RDD_나이별친구수카운트.ipynb')
+[E 2024-12-13 17:18:15.629 ServerApp] {
+      "Host": "15.152.89.63:8909",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://15.152.89.63:8909/notebooks/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    }
+[E 2024-12-13 17:18:15.629 ServerApp] 500 PUT /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb (b3edc88a2a9149dc93a8ede157742df9@118.219.28.24) 16.44ms referer=http://15.152.89.63:8909/notebooks/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb
+[W 2024-12-13 17:18:48.210 ServerApp] 404 GET /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb?content=0&_=1733377963976 (b3edc88a2a9149dc93a8ede157742df9@118.219.28.24) 1.12ms referer=http://15.152.89.63:8909/notebooks/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb
+[W 2024-12-13 17:18:48.210 ServerApp] 404 GET /api/contents/spark_aws/241205_04_RDD_%EB%82%98%EC%9D%B4%EB%B3%84%EC%B9%9C%EA%B5%AC%EC%88%98%EC%B9%B4%EC%9A%B4%ED%8A%B8.ipynb?content=0&_=1733377963976 (118.219.28.24): No such file or directory: spark_aws/241205_04_RDD_나이별친구수카운트.ipynb
+[I 2024-12-13 17:18:48.243 ServerApp] Starting buffering for 9485bfb5-d8d2-48ed-8628-637f3df5d414:1ac157ee-e479-416b-ad2e-266b4f45d4bb
+[I 2024-12-13 17:18:48.243 ServerApp] Starting buffering for f560993f-6818-4f89-9d96-34e84c069d03:d27321a7-ffd5-4712-b9d9-00df61e27b82
+[I 2024-12-13 17:18:48.244 ServerApp] Starting buffering for e91e8c2d-8f85-4ed7-b9c7-17e2ca6eb710:57e88a76-9dd6-4d76-b550-17e9d7cb9c49
+[C 2024-12-13 19:00:01.960 ServerApp] received signal 15, stopping
+[I 2024-12-13 19:00:01.961 ServerApp] Shutting down 5 extensions
+[I 2024-12-13 19:00:01.962 ServerApp] Shutting down 4 kernels
+[I 2024-12-13 19:00:01.975 ServerApp] Kernel shutdown: 9485bfb5-d8d2-48ed-8628-637f3df5d414
+[I 2024-12-13 19:00:01.983 ServerApp] Kernel shutdown: 0d0e7869-3fe7-4b22-afc7-4a64eb53994c
+[I 2024-12-13 19:00:01.985 ServerApp] Kernel shutdown: e91e8c2d-8f85-4ed7-b9c7-17e2ca6eb710
+[I 2024-12-13 19:00:01.993 ServerApp] Kernel shutdown: f560993f-6818-4f89-9d96-34e84c069d03
